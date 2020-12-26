@@ -3,7 +3,7 @@
   --title-text-color: #212121;
   --primary-white-color: #ffffff;
   --accent-color: #2196f3;
-  --icon-color: #AFB1B8;
+  --icon-color: #afb1b8;
 }
 body {
   background-color: #ffffff;
@@ -107,15 +107,15 @@ header {
 .contact-nav .item + .item {
   margin-left: 50px;
 }
-.contact-icons{
-margin-right: 10px;
-display: flex;
-align-items: center;
-fill: currentColor;
+.contact-icons {
+  margin-right: 10px;
+  display: flex;
+  align-items: center;
+  fill: currentColor;
 }
 .contact-icons:hover,
-.contact-icons:focus{
-color: var(--accent-color)
+.contact-icons:focus {
+  color: var(--accent-color);
 }
 
 /*--------------------------------Герой------------------------------- */
@@ -176,7 +176,6 @@ color: var(--accent-color)
 }
 .feature-list {
   display: flex;
-
 }
 .feature-icons {
   display: flex;
@@ -185,7 +184,6 @@ color: var(--accent-color)
   background-color: #f5f4fa;
   margin-bottom: 30px;
   align-items: center;
-}
 }
 .feature-list .item {
   width: calc((100%-90px) / 4);
@@ -261,35 +259,65 @@ color: var(--accent-color)
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.social-links{
-display:flex;
-align-items: center;
-margin-top: 16px;
-padding-left: 32px;
-padding-right: 32px;
-display-basis: calc((100%-30px) / 4);
+.social-links {
+  display: flex;
+  align-items: center;
+  margin-top: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  display-basis: calc((100%-30px) / 4);
 }
-.social-links .icon:not(:last-child){
-margin-right: 10px;
+.social-links li:not(:last-child) {
+  margin-right: 10px;
 }
-.social-links .icon{
-display:flex;
-align-items: center;
-justify-content: center;
-width: 44px;  
-height: 44px;
-border-radius:50%;
-background-color: #ffffff;
-fill: var(--icon-color);
+.social-links .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  fill: var(--icon-color);
 }
 .social-links .icon:hover,
-.social-links .icon:focus{
-fill: var(--primary-white-color); 
-background-color: var(--accent-color);
+.social-links .icon:focus {
+  fill: var(--primary-white-color);
+  background-color: var(--accent-color);
 }
-.social-links a{
-text-decoration: none;
+/* -------------------Наші клієнти-------------------- */
+.our-clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
+.clients-list {
+  display: flex;
+  margin-top: 50px;
+}
+.clients-list .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #afb1b8;
+  box-sizing: border-box;
+  border-radius: 4px;
+  fill: var(--icon-color);
+  background-color: #ffffff;
+}
+.clients-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+.clients-list .icon:hover,
+.social-links .icon:focus {
+  fill: var(--accent-color);
+  border: 1px solid #2196f3;
+}
+.icon-logo {
+  viewport-fit: 0 1 88 88;
+}
+
 /* ----------------------   Підвал --------------------*/
 .footer {
   background-color: #2f303a;
@@ -309,9 +337,52 @@ text-decoration: none;
 }
 .address .contact {
   color: rgba(255, 255, 255, 0.6);
+  cursor: pointer;
 }
 .contact {
   margin-top: 9px;
+}
+.footer-info {
+  display: flex;
+}
+.join-us-division {
+  margin-top: 12px;
+  margin-left: 70px;
+}
+.join-us {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1, 14;
+  color: var(--primary-white-color);
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.footer-social {
+  display: flex;
+  margin-top: 20px;
+}
+
+.footer-list {
+  display: flex;
+  align-items: center;
+}
+.footer-list li:not(:last-child) {
+  margin-right: 10px;
+}
+.footer-list .icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);
+  fill: var(--primary-white-color);
+}
+.footer-list .icon:hover,
+.footer-list .icon:focus {
+  background-color: var(--accent-color);
+  cursor: pointer;
 }
 /* -------------------------Портфоліо --------------------*/
 .portfolio-section {

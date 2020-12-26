@@ -31,13 +31,23 @@
         </nav>
         <ul class="contact-nav">
           <li class="item">
-            <a class="link contact" href="mailto:info@devstudio.com"
-              >info@devstudio.com</a
+            <a class="link contact" href="mailto:info@devstudio.com">
+              <div class="contact-icons">
+                <svg width="16px" height="12px">
+                  <use href="./images/sprite.svg#icon-envelope"></use>
+                </svg>
+              </div>
+              info@devstudio.com</a
             >
           </li>
           <li class="item">
-            <a class="link contact" href="tel:+380961111111"
-              >+38 096 111 11 11</a
+            <a class="link contact" href="tel:+380961111111">
+              <div class="contact-icons">
+                <svg width="10px" height="16px">
+                  <use href="./images/sprite.svg#icon-phone"></use>
+                </svg>
+              </div>
+              +38 096 111 11 11</a
             >
           </li>
         </ul>
@@ -203,17 +213,58 @@
     </main>
     <footer class="footer">
       <div class="container">
-        <a class="logo footer-logo" href="./"
-          ><span class="first-part">Web</span
-          ><span class="second-part">Studio</span></a
-        >
-        <address class="address">
-          г. Киев, пр-т Леси Украинки, 26
-          <a class="link contact" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-          <a class="link contact" href="tel:+380961111111">+38 096 111 11 11</a>
-        </address>
+        <div class="footer-info">
+          <div>
+            <a class="logo footer-logo" href="./"
+              ><span class="first-part">Web</span
+              ><span class="second-part">Studio</span></a
+            >
+            <address class="address">
+              г. Киев, пр-т Леси Украинки, 26
+              <a class="link contact" href="mailto:info@devstudio.com"
+                >info@devstudio.com</a
+              >
+              <a class="link contact" href="tel:+380961111111"
+                >+38 096 111 11 11</a
+              >
+            </address>
+          </div>
+          <div class="join-us-division">
+            <p class="join-us">присоединяйтесь</p>
+            <div class="footer-social">
+              <ul class="footer-list">
+                <li>
+                  <a class="icon" href="">
+                    <svg width="20px" height="20px">
+                      <use href="./images/sprite.svg#icon-instagram"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon" href="">
+                    <svg width="20px" height="20px">
+                      <use href="./images/sprite.svg#icon-twitter"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon" href="">
+                    <svg width="20px" height="20px">
+                      <use href="./images/sprite.svg#icon-facebook"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li>
+                  <a class="icon" href="">
+                    <svg width="20px" height="20px">
+                      <use href="./images/sprite.svg#icon-linkedin"></use>
+                    </svg>
+                  </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
       </div>
     </footer>
   </body>
