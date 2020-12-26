@@ -314,9 +314,6 @@ header {
   fill: var(--accent-color);
   border: 1px solid #2196f3;
 }
-.icon-logo {
-  viewport-fit: 0 1 88 88;
-}
 
 /* ----------------------   Підвал --------------------*/
 .footer {
